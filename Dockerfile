@@ -1,7 +1,5 @@
 FROM ubuntu:bionic
 
-COPY qemu-arm-static /usr/bin/qemu-arm-static
-
 EXPOSE 8080 8443 8843 8880
 
 RUN apt-get update && \
