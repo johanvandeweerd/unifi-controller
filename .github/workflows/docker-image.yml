@@ -12,9 +12,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       
-      - name: Echo Dockerhub username
-        run: echo ${{ secrets.DOCKERHUB_USERNAME }}
-      
       - name: Dockerhub login
         uses: docker/login-action@v1.8.0
         with:
